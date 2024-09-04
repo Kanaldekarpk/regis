@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0a6bb4, #8bd2f2, #15b7ec);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-left, .logo-right {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+    margin-top: 50px;
+}
+
+.registration-container {
+    background-color: #ffffff;
+    padding: 20px; /* Restore padding for larger screens */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Restore margin for larger screens */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Ensure input boxes have enough space */
+}
+
+label {
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #15b7ec;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1391b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 10px;
+        align-items: center;
+    }
+
+    .logo-left, .logo-right {
+        width: 60px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin: 10px 0;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+
+    .registration-container {
+        padding: 10px;
+        margin-top: 30px;
+        width: 90%;
+    }
+}
